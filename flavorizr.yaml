@@ -1,0 +1,33 @@
+  # Define your flavors here
+
+flavors:
+  # dev flavor configuration
+  dev:
+    app:
+      name: "Nagwa Task Dev"
+      icon: "assets/images/app_icon_dev_flavors.png"
+    android:
+      applicationId: "com.Nagwa.task.dev"
+    ios:
+      bundleId: "com.Nagwa.task.dev"
+  # prod flavor configuration    
+  prod:
+    app:
+      name: "Nagwa Task"
+      icon: "assets/images/app_icon_prod_flavors.png"
+    android:
+      applicationId: "com.Nagwa.task"
+    ios:
+      bundleId: "com.Nagwa.task"
+
+
+   # dart pub run flutter_flavorizr
+
+      # flutter build apk --flavor dev --release -t lib/main_dev.dart --dart-define-from-file=.env
+      # flutter build apk --flavor prod --release -t lib/main_prod.dart --dart-define-from-file=.env
+      # flutter build appbundle --flavor dev --release -t lib/main_dev.dart --dart-define-from-file=.env
+      # flutter build appbundle --flavor prod --release -t lib/main_prod.dart --dart-define-from-file=.env
+      # flutter build apk --split-per-abi --flavor prod --release -t lib/main_prod.dart --dart-define-from-file=.env
+      # flutter build apk --split-per-abi --flavor dev --release -t lib/main_dev.dart --dart-define-from-file=.env
+
+      # flutterfire configure --project=Nagwa-task --ios-bundle-id=com.bevatal.task --android-package-name=com.bevatal.task

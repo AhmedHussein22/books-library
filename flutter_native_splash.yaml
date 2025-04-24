@@ -1,0 +1,23 @@
+# This file is used by the flutter_native_splash package to generate splash screen images for both mobile and web.
+
+flutter_native_splash:
+  color: "#0A8798"  # Background color of the splash screen.
+  image: assets/images/splash.png  # Path to your splash screen image.
+
+ 
+  fullscreen: true  # Enable full-screen mode for the splash screen.
+  android: true  # Enable splash screen for Android.
+  ios: true  # Enable splash screen for iOS.
+  web: true  # Enable web splash screen.
+
+
+# Optional parameters for customizing splash screen appearance
+  web_image_mode: center  # Content mode for web splash screen image.
+  android_gravity: center  # Gravity for Android splash screen image.
+  ios_content_mode: center  # Content mode for iOS splash screen image.
+
+  android_12:
+    image: assets/images/splash.png
+    color: "#0A8798"
+
+    #dart run flutter_native_splash:create

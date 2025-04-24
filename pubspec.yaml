@@ -1,0 +1,90 @@
+name: nagwa_books
+description: "A new Flutter project."
+
+publish_to: "none"
+
+version: 1.0.0+1
+
+# !this project was generated with flutter v  3.22.3
+environment:
+  sdk: ">=3.3.0 <4.0.0" # for flutter version
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # ****** Localization *******
+  flutter_localizations:
+    sdk: flutter
+
+
+  # ****** UI *******
+  cupertino_icons: ^1.0.8 # for cupertino icons
+  flutter_spinkit: ^5.2.1 # for loading spinners in app
+  flutter_screenutil: ^5.9.3 # for responsive ui
+  device_preview: ^1.2.0 # for preview app in different devices
+  skeletonizer: ^1.4.3 # for shimmer effect in app
+
+
+
+  # ****** Images *******
+  cached_network_image: ^3.4.1 # for caching images from network
+
+
+  # ****** Network *******
+  dio: ^5.8.0+1 # for network requests and api calls
+
+  # ****** caching *******
+  shared_preferences: ^2.5.3 # for caching data in cache storage
+
+  # ! Services
+
+  # ****** State Management *******
+  flutter_bloc: ^9.1.0 # for State Management
+  get_it: ^8.0.3 # for dependency injection
+  equatable: ^2.0.7 # for equatable classes and methods
+
+
+
+
+
+
+
+  #********firebase services *************
+  # firebase_core: ^3.8.1 # for firebase core services
+
+
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0 # for linting the code
+ # build_runner: ^2.4.15 # for generating files
+  flutter_flavorizr: ^2.3.0 # for creating different flavors of app
+  flutter_native_splash: ^2.4.4 # for splash screen in app
+  #mockito: ^5.4.6
+  bloc_test: ^10.0.0
+
+flutter:
+  uses-material-design: true
+
+  # *To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/
+    - assets/fonts/
+    - assets/gifs/
+    - assets/icons/
+    - assets/images/
+    - assets/jsons/lang/
+    - assets/jsons/lottifiles/
+
+
+
+
+ #*To add fonts to your application, add a fonts section, like this:
+  fonts:
+    - family: IBMPlexSans
+      fonts:
+        - asset: assets/fonts/IBMPlexSans-Medium.ttf
+          weight: 500
